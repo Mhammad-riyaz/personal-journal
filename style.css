@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: 'Source Sans Pro';
+   background-color: #FAFAFA;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+header{
+    display: grid;
+    grid-template-columns: 0rem 12.1rem repeat(auto-fill,minmax(1px,1fr)) 2rem 5rem  ;
+    align-items: center;
+    column-gap: 1.2em;
+    grid-template-rows: 3.6em max-content;
+    background-color:#FFFFFF;
+
+}
+.capital{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    grid-column: 2;
+}
+.icon{
+    width: 1.5rem;
+    align-self: center;
+}
+.heading{
+    font-size:1.3rem;
+    align-self:center;
+    letter-spacing: -1px;
+    width: fit-content;
+}
+.home{
+    grid-column: -3;
+}
+.home,.about-me{
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.about-me{
+    align-self: center;
+    grid-column: -2;
+}
+.img-background{
+    color: #FFFFFF;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    position: relative;
+}
+.background{
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+    
+}
+.date{
+    font-weight: 200;
+    font-size: clamp(0.9em,2vw,0.8em);
+    position: absolute;
+    top: 28%;
+    left: 4%;
+}
+.main-text{
+    display: block  ;
+    width: 70%;
+    font-size: clamp(2em,2.5vw,5em);
+    position: absolute;
+    left: 4%;
+    top: 36%;
+    font-weight: 700;
+    text-shadow: 0px 0px 8px black;
+    /* line-height: 34px; */
+}
+.para-text{
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 1em;
+    position: absolute;
+    top:53%; 
+    left: 4%;
+    width: 85%;
+    margin-top: 40px;
+    text-shadow: 0px 0px 10px black;
+
+}
+
+.blogs{
+    padding: 1em;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(274px,1fr));
+    column-gap: 4em;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-family: 'Source Sans Pro';
+    margin-right: auto;
+    margin-left: auto;
+    width: 21em;
+    margin-bottom: 4em;
+    height: 19em;
+
+}
+.blog-image{
+    width:100%;
+    margin-bottom: 8px;
+    text-align: center;
+    justify-self: center;
+    height: 13em;
+}
+.blog-date{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.blog-heading{
+    margin-bottom: 8px;
+}
+.blog-des{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.blog-date,.blog-heading,.blog-des{
+    text-align: left;
+}
+.view-more{
+    background-color:#FFFFFF;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: 1.5px solid underline;
+    font-family: 'Source Sans Pro';
+    margin-bottom: 4em;
+}
+.view-more:hover,.home:hover{
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    color: #ECECEC;
+    background-color:#202020;
+    padding: 1em;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+    font-size: 0.7em;
+}
+
+
+.upper-space{
+    padding-top: 17em;
+}
+.go-up-date{
+    top: 4%;
+    color: #151515;
+    text-shadow: none;
+    font-weight: 400;
+}
+.go-up-main-text{
+    top: 7.5%;
+    color: #151515;
+    text-shadow: none;
+}
+.go-up-para-text{
+    top: 16%;
+    color: #151515;
+    text-shadow: none;
+    font-weight: 400;
+}
+.para,.disable{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+
+.para-1,.para-2{
+    padding: 1em 2em 1em 2em ;
+    color:#151515 ;
+    font-weight: 400;
+    font-size: 1em;
+    margin-right: 0px;
+}
+.recent-posts{
+    font-family: 'Source Sans Pro';
+    text-align: center;
+}
+
+.profile{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.profile-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 12em;
+    align-items: center;
+    padding: 1em 2em 1em 2em ;
+}
+
+.img{
+    width: 174px;
+    border-radius: 100%;
+}
+
+.profile-text{
+    color:#151515 ;
+}
+.profile-text h1 {
+    margin-bottom: 0.6em;
+}
+
+
+@media only screen and (min-width:722px){
+    /* .para-text-{
+        margin-top: 0;
+    } */
+        .background-media{
+            height: 734px;
+        }
+        .main-text-media{
+            top:63%;
+        }
+        .date-media{
+            font-weight: 400;
+            top: 59%;
+        }
+        .para-text-media{
+            font-weight: 300;
+            top: 69%;
+            width: 45%;
+        }
+       
+}
+
+
+          

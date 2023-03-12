@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+}
+html{
+    /* display: grid;
+    grid-template-columns:  1fr ;
+     grid-template-areas: "center" ;
+    scroll-behavior: smooth; */
+}
+body::-webkit-scrollbar{
+    display: none;
+    background-color: #FAFAFA;
+  }
+body{
+   /* grid-area: center; */
+   font-family: 'Source Sans Pro';
+
+}
+header ul{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+/*
+header{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1.3em auto minmax(300px,1fr)  1fr 5rem minmax(100px,auto) 100px 1em;
+    grid-template-rows:  70px 100%;
+    grid-template-areas:
+    ". icon header . home aboutme ."
+    "image image image image image image image";
+    grid-column-gap: 0.3em;
+} */
+.capital{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+.icon{
+    display: inline;
+    /* grid-area: icon; */
+    width: 2rem;
+    align-self: center;
+}
+.heading{
+    display: inline;
+    font-size:1.4rem;
+    grid-area: header;
+    align-self:center;
+    letter-spacing: -1px;
+}
+.home{
+    grid-area: home;
+    align-self: center;
+}
+.home,.about-me{
+    cursor: pointer;
+}
+.about-me{
+    grid-area: aboutme;
+    align-self: center;
+}
+.img-background{
+    color:#FFFFFF;
+    background-color: #FAFAFA;
+    font-family: 'Source Sans Pro';
+    height: min-content;
+    display: block;
+    grid-area: image;
+    overflow:hidden;
+    position: relative;
+}
+.background{
+    grid-area: image;
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+    
+}
+.date{
+    font-weight: 200;
+    grid-area: image;
+    font-size: clamp(0.9em,2vw,0.8em);
+    position: absolute;
+    top: 34%;
+    left: 4%;
+}
+.main-text{
+    display: block  ;
+    width: 70%;
+    font-size: clamp(2em,2.5vw,5em);
+    position: absolute;
+    left: 4%;
+    top: 39%;
+    font-family: 'Source Sans Pro';
+    grid-area: image;
+    font-weight: 700;
+    text-shadow: 0px 0px 8px black;
+}
+.para-text{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    position: absolute;
+    top:53%; 
+    left: 4%;
+    width: 70%;
+    grid-area: image;
+    margin-top: 40px;
+    text-shadow: 0px 0px 10px black;
+
+}
+
+.blogs{
+    box-sizing: border-box;
+    padding: 1em;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(474px,1fr));
+    column-gap: 1em;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-family: 'Source Sans Pro';
+    margin-right: auto;
+    margin-left: auto;
+    width: min-content;
+    margin-bottom: 4em;
+
+}
+.blog-image{
+    display: inline;
+    width:30em;
+    margin-bottom: 8px;
+    text-align: center;
+    justify-self: center;
+    height: 17em;
+}
+.blog-date{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.blog-heading{
+    margin-bottom: 8px;
+}
+.blog-des{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.blog-date,.blog-heading,.blog-des{
+    text-align: left;
+}
+.view-more{
+    background-color:#FFFFFF;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: 1.5px solid underline;
+    font-family: 'Source Sans Pro';
+    margin-bottom: 4em;
+}
+.view-more:hover,.home:hover{
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    color: #ECECEC;
+    background-color:#202020;
+    padding: 1em;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+    font-size: 0.7em;
+}
+
+
+.upper-space{
+    padding-top: 17em;
+}
+.go-up-date{
+    top: 4%;
+    color: #151515;
+    text-shadow: none;
+    font-weight: 400;
+}
+.go-up-main-text{
+    top: 7%;
+    color: #151515;
+    text-shadow: none;
+}
+.go-up-para-text{
+    top: 14%;
+    color: #151515;
+    text-shadow: none;
+    font-weight: 400;
+}
+.para,.disable{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+
+.para-1,.para-2{
+    font-family: 'Source Sans Pro';
+    width: 70%;
+    padding: 2em 4em 2em 4em ;
+    color:#151515 ;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.recent-posts{
+    font-family: 'Source Sans Pro';
+    text-align: center;
+}
+
+.profile{
+    margin-top: 3em;
+}
+
+.profile-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 12em;
+    align-items: center;
+    padding: 2em 4em 2em 4em ;
+}
+.profile-img{
+    width: 100px;
+    
+}   
+.img{
+    width: 174px;
+    border-radius: 100%;
+}
+
+.profile-text{
+    width:70%;
+}
+
+
+@media only screen and (min-width:771px){
+    /* .para-text-{
+        margin-top: 0;
+    } */
+        .background-media{
+            height: 710px;
+        }
+        .main-text-media{
+            top:60%;
+        }
+        .date-media{
+            font-weight: 400;
+            top: 55%;
+        }
+        .para-text-media{
+            font-weight: 300;
+            top: 71%;
+            width: 50%;
+        }
+       
+}
+
+
+          
